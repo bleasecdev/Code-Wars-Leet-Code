@@ -1,3 +1,18 @@
 function multiply(a, b){
   return a * b
 }
+
+
+function sumOfDifferences(arr) {
+  //arrange array into descending order.
+  arr.reverse();
+  
+  //create a sum variable
+  let sum = 0;
+  
+  // create a for loop that iterates through the pairs
+  for (let i = 0; i < (arr.length - 1); i++){
+     sum += (arr[i] - arr[i + 1]);
+  }
+   return(sum)
+}
