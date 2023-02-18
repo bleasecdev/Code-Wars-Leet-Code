@@ -9,10 +9,10 @@
 
 
 def descending_order(num):
-    # Bust a move right here
-    flip = string(num)
-    for xhar in flip:
-        output
+    num_str = str(num)
+    num_list = list(num_str)
+    num_list.sort(reverse=True)
+    sorted_num_str = ''.join(num_list)
+    return int(sorted_num_str)
 
-
-print(descending_order(12345))
+print(descending_order(52134))
